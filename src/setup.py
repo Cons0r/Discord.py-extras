@@ -1,6 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as fhandle:
+with open("example_project/README.md", "r") as fhandle:
     long_description = fhandle.read() # Your README.md file will be used as the long description!
 
 setuptools.setup(
@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ], # Enter meta data into the classifiers list!
     python_requires='>=3.6', # The version requirement for Python to run your package!
+		package_dir={"": "src"}
 )
